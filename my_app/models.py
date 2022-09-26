@@ -1,22 +1,37 @@
 from django.db import models
 
-# Create your models here.
 
-# import the standard Django Model
-# from built-in library
-from django.db import models
+class Funcionario(models.Model):
 
-# declare a new model with a name "GeeksModel"
+    nome = models.CharField(
+        max_length=255,
+        null=False,
+        blank=False
+    )
 
+    sobrenome = models.CharField(
+        max_length=255,
+        null=False,
+        blank=False
+    )
 
-class GeeksModel(models.Model):
-    # fields of the model
-    title = models.CharField(max_length=200)
-    description = models.TextField()
-    last_modified = models.DateTimeField(auto_now_add=True)
-    img = models.ImageField(upload_to="images/")
+    cpf = models.CharField(
+        max_length=14,
+        null=False,
+        blank=False
+    )
 
-    # renames the instances of the model
-    # with their title name
-    def __str__(self):
-        return self.title
+    tempo_de_servico = models.IntegerField(
+        default=0,
+        null=False,
+        blank=False
+    )
+
+    remuneracao = models.DecimalField(
+        max_digits=8,
+        decimal_places=2,
+        null=False,
+        blank=False
+    )
+
+    objetos = models.Manager()
