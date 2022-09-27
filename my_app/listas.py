@@ -1,4 +1,5 @@
-lista = ['FERNANDO', 'CREUZA', 'RUBENS', 'SANDRA']
+listas = ['FERNANDO', 'CREUZA', 'RUBENS', 'SANDRA', 'RISALDO']
 
-print(lista[0])
-print(lista[1])
+
+for lista in listas:
+    print(lista)
