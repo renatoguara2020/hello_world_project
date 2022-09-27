@@ -153,3 +153,9 @@ string1[:-5]  # returns the string minus its last 5 characters
 # adds a third element called step; skips every second character of the string
 string1[::2]
 string1[::-1]  # returns string1's elements in reverse order
+
+
+lista = ['renato', 'nathan', 'creuza', 'fernando']
+
+print(lista)
+print(lista[1])
