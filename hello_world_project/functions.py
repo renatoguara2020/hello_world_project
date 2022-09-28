@@ -1,9 +1,13 @@
 
+nome = 'NATHAN BARBOSA SOARES'
+idade = 4
+
 
 def saudarPessoa(nome, idade):
-    return (f'Olá {nome} tudo bem sua idade é {idade} anos')
+    print(f'Olá {nome} tudo bem sua idade é {idade} anos')
 
 
-nome = saudarPessoa("RENATO ALVES SOARES", 51)
+print(saudarPessoa("RENATO ALVES SOARES", 51))
 
 print(nome)
+print(idade)
