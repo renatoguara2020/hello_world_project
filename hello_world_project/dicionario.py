@@ -1,5 +1,5 @@
 
-pc = {'CPU': 'Intel', 'RAM': '8gb', 'SSD': '250bg'}
+pc = {'CPU': 'Intel', 'RAM': '8gb', 'SSD': '250bg', 'QTY_CPU': '4'}
 
 for chave in pc.keys():
 
